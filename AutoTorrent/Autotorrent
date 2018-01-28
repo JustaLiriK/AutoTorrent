@@ -1,7 +1,7 @@
 #!/bin/bash
 dpkg-query -s transmission-cli | grep Status || sudo apt install transmission-cli
-DEST1=/media/usb/FILM_ADULTE
-DEST2=/media/usb/FILM_ENFANT
+DEST1=/media/usb/FILM_ADULTE #dossier de destination 1 ici
+DEST2=/media/usb/FILM_ENFANT #le nombre de dossiers n'est pas limité
 case $2 in
 1 ) transmission-cli -w $DEST1 -f ./endtorrent $1;;
 2 ) transmission-cli -w $DEST2 -f ./endtorrent $1;;
