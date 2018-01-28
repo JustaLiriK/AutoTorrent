@@ -1,0 +1,3 @@
+#!/bin/bash
+killall transmission-cli
+exit 0
